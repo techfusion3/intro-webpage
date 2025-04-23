@@ -1,0 +1,468 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Faijan Ahamed</title>
+
+        <link href="normalize.css" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Vast+Shadow&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+        <!-- <link rel="stylesheet" type="text/css" href="faijanportfolio2.css"> -->
+
+        <style>
+            body{
+               
+               background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+               font-family: 'Work Sans', sans-serif;
+           }
+           
+           a{
+               text-decoration: none;
+           }
+           
+           h1 h2 h3 {
+           font-family: 'Days One', sans-serif;
+           }
+           
+           
+           nav{
+               display: flex;
+               background-color: #200e3d;
+               justify-content: center;
+               position: fixed;
+               width: 100%;
+               z-index: 1;
+           }
+           
+           nav ul {
+               display: flex;
+               align-items: center;
+               padding: 0 10%;
+               list-style: none;
+           }
+           
+           nav ul li a {
+               font-size: 16px;
+               padding: 0 15px;
+               color: white;
+               transition: 0.2s;
+               text-transform: uppercase;
+           }
+           
+           nav ul li a:hover{
+               transition: 0.2s;
+               color: 52c5ff;
+           }
+           
+           .container{
+               position: relative;
+               width: 100%;
+               max-width: 1200px;
+               margin: 0 auto;
+               padding: 0 15px;
+           }
+           
+           .hero{
+               padding-top: 130px;
+           }
+           
+           .hero img{
+               border-style: none;
+               border-radius: 50%;
+               margin: 0 auto;
+               max-width: 450px;
+               display: block;
+           }
+           
+           h1{
+               color: black;
+               text-align: center;
+               font-size: 24px;
+               margin: 30px 10px 100px; 
+           }
+           
+           .aboutme{
+               width: 90%;
+               max-width: 1100px;
+               height: auto;
+               background-color: white;
+               text-align: center;
+               padding: 40px 50px 70px;
+               margin: 0 auto;
+               box-shadow: 10px 10px 0px rgb(0 0 0 /  40%), -10px -10px 0px rgb(255 114 114 / 80%);
+           }
+           
+           .aboutme-section{
+               padding: 5px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               flex-flow:wrap;
+           }
+           
+           /* .aboutme-image  */
+           #faijan1Image {
+               height: 600px;
+               width: 500px;
+               background-size: cover;
+               background-position: center;
+           }
+           
+           .aboutme-text{
+               height: auto;
+               width: 40%;
+               margin-left: 40px;
+               text-align: left;
+              
+           }
+           
+           #projects{
+               padding: 5px;
+               margin: 5%;
+               width: 90%;
+               height: auto;
+               text-align: center;
+           }
+           
+           .projects{
+               display: flex;
+               /* align-items: center; */
+               justify-content: center;
+               /* flex-flow: wrap; */
+           }
+           
+           #projects h2{
+               color: white;
+           }
+           
+           .earth-project{
+               width: 290px;
+               height: 300px;
+               margin: 20px;
+               background: white;
+               position: relative;
+               border-radius: 10px;
+               background-size: cover;
+               background-position: center;
+           }
+           #earthimage {
+                width: 300px;
+                height: 300px;
+           }
+           
+           .bbc-project{
+               width: 290px;
+               height: 300px;
+               margin: 20px;
+               background: white;
+               position: relative;
+               border-radius: 10px;
+               background-size: cover;
+               background-position: center;
+           }
+           
+           .spotify-project{
+               width: 290px;
+               height: 300px;
+               margin: 20px;
+               background: white;
+               position: relative;
+               border-radius: 10px;
+               background-size: cover;
+               background-position: center;
+               /* background-image: url("./Project3/assets/logo.png"); */
+           }
+           
+           .text{
+               position: absolute;
+               width: 90%;
+               height: 65px;
+               left: 0;
+               bottom: 0;
+               z-index: 2;
+               background-color: whitesmoke;
+               overflow: hidden;
+               transition: 0.2s;
+               padding: 20px;
+           }
+
+           #width{
+                width: 86.3%;
+           }
+
+
+           
+           .text:hover{
+               height: 175px;
+               transition: 0.3s;
+           }
+           
+           .text h3{
+               margin-top: 3px;
+           }
+           
+           .content{
+               color: black;
+           }
+           
+           .button{
+               border: 5px solid lightblue;
+               border-radius: 10px;
+               width: 160px;
+               margin-bottom: 100px;
+               margin-left: 10px;
+           }
+           
+           .contact{
+               width: 100%;
+               height: auto;
+               padding: 75px 0px 50px 0px;
+               text-align: center;
+               background-color: rgba(3, 3, 3, 45%);
+           }
+           
+           .contact p{
+               margin-bottom: 50px;
+           }
+           
+           .contact h2, .contact p{
+               color: white;
+           }
+           
+           .contact-form{
+               width: 800px;
+               max-width: 1100px;
+               text-align: left;
+               display: flex;
+               margin: 0 auto;
+               color: white;
+           
+           }
+           
+           .contact-form label{
+               display: block;
+               margin-bottom: 9px;
+           }
+           
+           .message{
+               display: flex;
+               flex-direction: column;
+               width: 60%;
+           }
+           
+           .message textarea{
+               border-radius: 5px;
+               border: 0px;
+           }
+           
+           .contact-details{
+               flex: 1;
+               margin-right: 50px;
+           
+           }
+           
+           .contact-details input {
+               width: 100%;
+               border-radius: 5px;
+               border: 0px;
+               padding: 15px 20px;
+               margin-bottom: 20px;
+           }
+           
+           .message button {
+               color: #1d3d5f;
+               border: 0;
+               border-radius: 5px;
+               background: lightblue;
+               width: 140px;
+               height: 40px;
+               margin-top: 40px;
+               margin-left: auto;
+               text-transform: uppercase;
+               font-weight: bold;
+               cursor: pointer;
+               transition: 0.3s;
+               }
+           
+               .message button:hover {
+               background: black;
+               color:white;
+               transition: 0.2s;
+               }
+           
+               footer {
+               height: 90px;
+               background-color: #1f2027;
+           
+               }
+           
+               footer .container {
+               display: flex;
+               align-items: center;
+               height: 100%;
+               }
+           
+               .social-media {
+               font-size: 200%;
+               width: auto;
+               margin-left: auto;
+               }
+           
+               .social-media a i{
+               color: white;
+               transition: 0.2s;
+               }
+           
+               .social-media a i:hover {
+               color: lightblue;
+               transition: 0.2;
+               }
+           
+               .copyright {
+               color: white;
+               }
+               
+        </style>
+    </head>
+
+            <body>
+                <nav>
+                    <ul>
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contactme">Contact Me</a></li>
+
+                    </ul>
+                </nav>
+
+                <section class="hero">
+                    <div class="container"></div>
+                    <img src="Images/faijan2.jpeg">
+                    <h1>Hi! I'm Faijan! I am a Btech 3rd year student from CSE department.</h1>
+                </section>
+
+                <section id="aboutme" class="aboutme">
+                    <h2>About me</h2>
+                    <div class="aboutme-section">
+                      
+                        <div class="aboutme-image">
+                            <img id="faijan1Image" src="Images/aboutMeImage.jpg">
+                        </div>
+                        
+                        
+                            <div class="aboutme-text">
+                                <p>My name is Faijan Ahamed (born on 30 march 2003). I am a student. Curently, I am pursuing bachelor's degree in the department of computer science and engineering from University of Lucknow which is located in Lucknow (The capital of Uttarpradesh). Lucknow University is a very prestigious government university of India. </p>
+                                <p>My journey to the University from School life is priceless. I have completed my 10th standard from my village Sikariganj in 2019. I have scored highest marks in my school securing 94.8% from CBSE Board. I have moved to city Gorakhpur in class 11th which is the district of Sikariganj.</p>
+                                <p>I started preparing for IIT JEE exam in class 11th. I have taken admission in Govt. Jubilee Inter College in class 11th and also I have joined coaching in the best institute of gorakhpur. I have prepared for 2 years. I have cleared mains but could not qualify advanced. I had decided to take 1 year gap and moved to Kota rajasthan and taken admission in Motion Education for IIT JEE preparation. In this year I have scored more marks than the previous year in Mains. Due to my bad heath condition I could not able to qualify advanced this year also. On the basis of JEE mains scorecard I have got admission in Lucknow University in CSE department. I have been recovered from my sickness and now I am happy because despite being sick I have been admitted in the best university of my state.</p> 
+
+                              
+                          
+                            
+                        </div>
+                    </div>
+                </section>
+
+                
+
+   
+                    <section id="projects">
+                       
+                            <h2>Projects</h2>
+                            <div class="projects">
+                
+                                <div class="earth-project">
+                                    <img id="earthimage" src="Images/earthimage.jpg">
+                                    <div class="text">
+                                        <h3 class="project-name">Earth Facts</h3>
+                                        <div class="content">
+                                            <p>A HTML project about some facts about the earth.</p>
+                                        </div>
+                                        <a class="button" href="./Project1/index.html">View Project</a>
+                                
+                                    </div>
+                
+                                </div>
+
+                                <div class="bbc-project">
+                                    <img style="width: 300px;" src="Images/bbcnews.png">
+                                    <div class="text">
+                                        <h3 class="project-name">BBC News Clone</h3>
+                                        <div class="content">
+                                            <p>This project is a clone of the BBC news website from the Web Dev 2.0 Course.</p>
+                                        </div>
+                                        <a class="button" href="./Project2/bbcnews2.html">View Project</a>                
+                                    </div>
+                                </div>
+
+                                <div class="spotify-project">
+                                    <img style="height: 295px;"src="./Project3/assets/logo.png">
+                                    <div id="width" class="text">
+                                        <h3 class="project-name">Spotify Music Player Clone</h3>
+                                        <div class="content">
+                                            <p>This project is a clone of the Spotify Music Player Website.</p>
+                                        </div>
+                                        <a class="button" href="./Project3/spotify.html">View Project</a>                
+                                    </div>
+                                </div>
+
+                                
+                                
+
+                            </div>
+                        </section>                
+
+                        <section id="contactme" class="contact">
+                            <h2>Contact</h2>
+                            <p>Use this form to get in touch. I would love to hear from you!</p>
+
+                            <form class="contact-form">
+
+                                <div class="contact-details">
+
+                                    <label for="name">Name</label>
+                                    <input type="text" id="yourname" placeholder="Yourname">
+
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" placeholder="Reason for your message">
+
+                                    <label for="email">Email Address</label>
+                                    <input type="text" id="email" placeholder="your email address">
+                                </div>
+
+                                <div class="message">
+                                    <label for="msg">Message</label>
+                                    <textarea id="msg" rows="16"></textarea>
+                                    <button type="submit">Submit</button>
+
+                                </div>
+                            </form>
+                        </section>
+
+                        <footer>
+                            <div class="container">
+                                <div class="copyright">
+                                    This site  &copy; 2023 Faijan Ahamed
+                                </div>
+                                <div class="social-media">
+
+                                    <a href="https://www.facebook.com/faijan.ahamed.378" target="_blank"><i class="fa fa-facebook-official" style="font-size:24px"></i></a>
+                                    <a href="https://x.com/ahamed_faijan?t=go4uWFb_iAtOb4CO8gpgfw&s=09" target="_blank"><i class="fa fa-twitter-square" style="font-size:24px"></i></a>
+                                </div>
+                            </div>
+                        </footer>
+             
+
+
+               
+            </body>
+
+     
+
+</html>
